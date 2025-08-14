@@ -49,7 +49,7 @@ export function HelpCenter() {
                         transition={{ duration: 1.0, delay: 0.5 }}
                     >
                         <Image
-                            className="lg:hidden w-full  max-w-[787px]   object-cover mt-8 px-4 md:mt-0"
+                            className="lg:hidden w-full  max-w-[50%]   object-cover mt-8 px-4 md:mt-0"
                             src="./NonStopEntertainment.png"
                             alt="Entertainment Preview"
                             width={0}
@@ -58,7 +58,7 @@ export function HelpCenter() {
                     </motion.div>
 
                     <motion.div
-                        className="flex flex-col px-2 text-center lg:text-left gap-6 mt-8"
+                        className="flex flex-col px-2 text-center lg:text-left gap-6 mt-8 max-w-[50%]"
                         initial={{ opacity: 0, x: 50 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 1.0, delay: 0.5 }}
@@ -87,7 +87,7 @@ export function HelpCenter() {
                         className='flex justify-center'
                     >
                         <Image
-                            className="hidden lg:block w-full md:w-[80%] max-w-[787px] h-auto object-cover mt-8 md:mt-0"
+                            className="hidden lg:block w-full md:w-[80%]  h-auto object-cover mt-8 md:mt-0"
                             src="./HelpCenterImgae.png"
                             alt="Entertainment Preview"
                             width={0}

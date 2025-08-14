@@ -10,7 +10,7 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useLanguage } from "@/components/contexts/LanguageContext";
 import { translations } from "@/components/translations";
-import { Custombutton } from "@/components/Custombutton";
+// import { Custombutton } from "@/components/Custombutton";
 
 export function Header() {
   const [openSupport, setopenSupport] = useState(false);
@@ -20,8 +20,6 @@ export function Header() {
   const navigation = [
     { name: t.Home, href: "/" },
     { name: t.Free_Trail, href: "/free-trail" },
-    { name: t.Pricing, href: "/pricing" },
-    // { name: t.Support, href: "/about" },
     { name: t.Channels, href: "/Channels" },
     { name: t.Guides, href: "/guides" },
     { name: t.Reseller, href: "reseller" },
@@ -57,7 +55,7 @@ export function Header() {
               <Link
                 key={index}
                 href={item.href}
-                className={`${pathname == item.href ? "text-[#2EAE8C] hover:text-white" : "text-white "}   mr-4 transition cursor-pointer text-[15px]  font-medium  text-center hover:bg-[#239579]  rounded-full px-6 py-2`}
+                className={`${pathname == item.href ? "text-[#2EAE8C] hover:text-white" : "text-white "}   mr-4 transition cursor-pointer text-[16px]  font-medium  text-center hover:bg-[#239579]  rounded-full px-6 py-2`}
               >
                 {item.name}
               </Link>

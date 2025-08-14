@@ -24,11 +24,11 @@ export const Supports = ({ Support, openSupport, openLanguage }) => {
     const currentLanguage = languages.find((lang) => lang.code === language) || languages[0];
 
     return (
-        <div className="relative inline-block text-left px-0 z-50">
+        <div className="relative inline-block text-left px-0 z-50 mx-5 ">
             <div>
                 <button
                     type="button"
-                    className="inline-flex justify-center gap-x-1.5 rounded-md bg-transparent 2xl:px-3 py-2 text-md 2xl:text-xl font-medium text-white"
+                    className="inline-flex justify-center gap-x-1.5 rounded-md bg-transparent 2xl:px-3 py-2 text-[16px]  font-medium text-white"
                     id="menu-button"
                     aria-expanded="true"
                     aria-haspopup="true"
@@ -50,7 +50,7 @@ export const Supports = ({ Support, openSupport, openLanguage }) => {
             </div>
 
             <div
-                className={`option absolute left-24 top-1 xl:left-0 xl:top-14 mt-2 w-[300px]  origin-top-right rounded-lg bg-[#1a1a1a] ${Support ? "block" : "hidden"} overflow-scroll scrollbar-hidden`}
+                className={`option absolute  left-24 top-1 xl:left-0 xl:top-14 mt-2 w-[300px]  origin-top-right rounded-lg bg-[#1a1a1a] ${Support ? "block" : "hidden"} overflow-scroll scrollbar-hidden`}
                 role="menu"
                 aria-orientation="vertical"
                 aria-labelledby="menu-button">

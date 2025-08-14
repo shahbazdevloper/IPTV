@@ -53,17 +53,17 @@ export function FeedbackForm() {
                         animate={{ opacity: 1 }}
                         transition={{ duration: 0.5, ease: "easeOut" }}
                     >
-                      <div className='xl:max-w-[1400px] 2xl:max-w-[1500px]'>
+                      <div className='xl:max-w-[1400px] 2xl:max-w-[1500px] px-5'>
                           <motion.div
-                            className="w-full lg:max-w-[800px]  p-6 rounded-xl shadow-lg xl:max-w-[80%]"
+                            className="w-full lg:max-w-[800px]  p-6  rounded-xl shadow-lg xl:max-w-[50%]"
                             initial={{ x: 20, opacity: 0 }}
                             animate={{ x: 0, opacity: 1 }}
                             transition={{ duration: 0.5, ease: "easeOut" }}
                         >
-                            <h2 className="text-left text-white text-2xl lg:max-w-[80%]  lg:leading-[4.5rem] lg:text-4xl font-semibold mb-6">
+                            <h2 className="text-left text-white text-2xl  lg:leading-[4.5rem] lg:text-4xl font-semibold mb-6">
                                 Express IPTV Express IPTV is a leader in smart IPTV solutions.
                             </h2>
-                            <p className="text-left text-white lg:max-w-[80%] text-lg lg:text-1xl mb-6">
+                            <p className="text-left text-white   text-lg lg:text-1xl mb-6">
                                 Enjoy the best and high-performance of our IPTV with the best IPTV server technology. Have a buffer-free streaming experience on any of your devices. Also, you can contact us anytime of the year, 24 hours a day, 7 days a week, as our customer support works around the clock.
 
                             </p>
