@@ -67,7 +67,7 @@ export function Price() {
         animate={{ scale: 1.0, opacity: 1 }}
         transition={{ delay: 0.5, duration: 1 }}
       >
-        <div className="w-full max-w-[310px] lg:max-w-[1420px] flex flex-wrap justify-center lg:justify-between h-auto items-center bg-[#2d2d2d] rounded-lg lg:rounded-full py-2 px-10">
+        <div className="w-full max-w-[450px] lg:max-w-[1420px] flex flex-wrap justify-center lg:justify-between h-auto items-center bg-[#2d2d2d] rounded-lg lg:rounded-full py-5 px-10">
 
           {/* Connection Options */}
           {["Scandinavian Package", "English Package" , "Arabic Package"].map((item, index) => (

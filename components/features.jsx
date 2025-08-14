@@ -55,7 +55,7 @@ export function Features() {
         <h1 className="Features_label text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-[120px]">
           {t.Title}
         </h1>
-        <h2 className="text-xl sm:text-base md:text-lg lg:text-2xl font-bold absolute top-[65%] transform -translate-y-1/2 left-1/2 -translate-x-1/2 w-[90%] md:w-auto">
+        <h2 className="text-xl sm:text-base md:text-lg   lg:text-2xl font-bold absolute top-[65%] transform -translate-y-1/2 left-1/2 -translate-x-1/2 w-[90%] md:w-auto">
           {t.heading}
           <span className="text-[#2EAE8C]"> {t.highlighted_text}</span>
         </h2>
