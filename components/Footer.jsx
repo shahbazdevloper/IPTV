@@ -54,7 +54,7 @@ export function Footer() {
     };
   }, []);
   return (
-    <div ref={divRef} className="  flex flex-wrap lg:flex-nowrap items-center justify-center bg-gray-900 text-white">
+    <div ref={divRef} className="  flex flex-col items-center justify-center bg-gray-900 text-white">
       {isVisible &&
         <motion.div
           className="px-6  xl:max-w-[1400px]  md:px-1 lg:px-1 flex flex-wrap lg:flex-nowrap justify-between  lg:gap-[10px] bg-gray-900 text-white pb-5"
@@ -62,6 +62,7 @@ export function Footer() {
           animate={{ opacity: 1 }}
           transition={{ duration: 1, ease: "easeOut" }}
         >
+          
           {/* Left Section */}
           <motion.div
             className="w-full lg:w-[700px] flex flex-col justify-start items-start   mt-14"
@@ -154,7 +155,20 @@ export function Footer() {
               </div>
             </div>
           </motion.div>
+          
         </motion.div>}
+
+          <hr className='border-white border w-full m-[25px]' />
+        <div className='lg:flex  lg:items-center gap-12 text-gray-400 '>
+            <p className='py-3'>
+            Upphovsrätt 2025 | Alla rättigheter förbehållna
+          </p>
+          <ul className='flex gap-2'>
+            <li>DMCA |</li>
+            <li>Integritetspolicy |</li>
+            <li>Anvandarvillkor</li>
+          </ul>
+        </div>
     </div>
   );
 }

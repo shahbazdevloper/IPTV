@@ -34,7 +34,7 @@ export default function HomePage() {
     <div >
       <Header /> 
       <Hero />  
-      {/* <Stats /> */}
+      <Stats />
       <Features />
       <AboutCard />
       <Devices />
@@ -43,7 +43,7 @@ export default function HomePage() {
       <StreamingAnywhere />
       <Price />
       <HowItWorks />
-      {/* <Client /> */}
+      <Client />
       <HelpCenter />
       <BlogSectin/>
       <FeedbackForm />
