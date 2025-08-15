@@ -4,7 +4,7 @@ const English = {
 
     Guides: "Guides",
     Channels: "Channels",
-    Free_Trail: "Free Trail",
+    Free_Trial: "Free Trial",
     Reseller: "Reseller",
     Pricing: "Pricing",
     Contact_us: "Contact us",
