@@ -12,6 +12,18 @@ export function MoviesSection() {
   const [isVisible, setIsVisible] = useState(false);
   const divRef = useRef(null);
 
+  // 👇 Add multiple posters here
+  const posters = [
+    "/messi.webp",
+    "https://peoplestv.nl/wp-content/uploads/2025/06/14-768x1024-1-1.webp",
+    "https://peoplestv.nl/wp-content/uploads/2025/06/allsvenskan-1.webp",
+    "https://peoplestv.nl/wp-content/uploads/2025/06/26-768x1024-1-1.webp",
+    "https://peoplestv.nl/wp-content/uploads/2025/06/f1.webp",
+    "https://peoplestv.nl/wp-content/uploads/2025/06/NHL-1.webp",
+    "https://peoplestv.nl/wp-content/uploads/2025/06/shl.webp",
+    "https://peoplestv.nl/wp-content/uploads/2025/06/supeetaan.webp",
+  ];
+
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -34,14 +46,17 @@ export function MoviesSection() {
   }, []);
 
   return (
-    <div ref={divRef} className="w-screen h-auto flex flex-col items-center relative overflow-hidden">
+    <div
+      ref={divRef}
+      className="w-screen h-auto flex flex-col items-center relative overflow-hidden"
+    >
       <Image
         src="/block.png"
         alt="Background"
         width={0}
         height={0}
         objectFit="cover"
-        className="absolute z-0 w-full h-[97.3%]"        
+        className="absolute z-0 w-full h-[97.3%]"
       />
 
       {isVisible && (
@@ -68,7 +83,7 @@ export function MoviesSection() {
             animate={{ x: ["0%", "-100%"] }}
             transition={{ repeat: Infinity, duration: 30, ease: "linear" }}
           >
-            {[...Array(8), ...Array(8)].map((_, index) => (
+            {[...posters, ...posters].map((src, index) => (
               <motion.div
                 key={index}
                 className="rounded-lg flex-shrink-0 w-[85px] h-[136px] sm:w-[120px] sm:h-[169px] md:w-[150px] md:h-[200px] lg:w-[200px] lg:h-[300px] xl:w-[250px] xl:h-[359px]"
@@ -77,8 +92,8 @@ export function MoviesSection() {
                 transition={{ delay: index * 0.1, duration: 0.3 }}
               >
                 <Image
-                  src="/messi.webp"
-                  alt="Movie Poster"
+                  src={src}
+                  alt={`Movie Poster ${index + 1}`}
                   width={200}
                   height={300}
                   className="w-full h-full border-white/50 border-4 object-cover rounded-lg"
