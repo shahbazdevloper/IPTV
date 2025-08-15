@@ -161,11 +161,11 @@ export function Footer() {
       <hr className="border-white border w-full my-6" />
 
       <div className="w-full xl:max-w-[1400px] flex flex-col lg:flex-row justify-between items-center gap-4 text-gray-400 px-6 md:px-8 lg:px-10 pb-6">
-        <p>Upphovsrätt 2025 | Alla rättigheter förbehållna</p>
+        <p>Copyright 2025 | All rights reserved</p>
         <ul className="flex gap-4 text-sm">
           <li className="hover:text-white cursor-pointer">DMCA</li>
-          <li className="hover:text-white cursor-pointer">Integritetspolicy</li>
-          <li className="hover:text-white cursor-pointer">Användarvillkor</li>
+          <li className="hover:text-white cursor-pointer">Privacy Policy</li>
+          <li className="hover:text-white cursor-pointer">Terms of Use</li>
         </ul>
       </div>
     </div>

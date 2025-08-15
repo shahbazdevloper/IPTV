@@ -159,7 +159,7 @@ const English = {
       },
     },
     six_Month: {
-      heading: "6 Month Package",
+      heading: "1 Month With VPN",
       plan_type: "Standard Plan",
       plan_value: 49.99,
       plan_features: {

@@ -21,6 +21,7 @@ export function Header() {
   const navigation = [
     { name: t.Home, href: "/" },
     { name: t.Free_Trial, href: "/free-trial" },
+    { name: t.Pricing, href: "/pricing" },
     { name: t.Channels, href: "/Channels" },
     { name: t.Guides, href: "/guides" },
     { name: t.Reseller, href: "/reseller" },

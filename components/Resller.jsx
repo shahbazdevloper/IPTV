@@ -279,25 +279,25 @@ export function Resller() {
                 className="my-12 rounded-xl shadow-xl"
               />
 
-       <ul className="list-disc list-inside text-lg lg:text-xl leading-relaxed space-y-4">
-  <li><strong>ID:</strong> Unique identifier for each user.</li>
-  <li><strong>Username:</strong> The username of the user.</li>
-  <li><strong>Password:</strong> The password associated with the account.</li>
-  <li><strong>Expire Date:</strong> The date when the user's access expires.</li>
-  <li><strong>Notes:</strong> Additional notes or information related to the user account.</li>
-  <li><strong>Speed:</strong> A field indicating the speed (left blank in this case).</li>
-  <li><strong>Con (Connections):</strong> Shows the number of active connections the user has.</li>
-  <li><strong>Watching:</strong> A field that may show the number of ongoing activities or sessions the user is involved in.</li>
-  <li><strong>IP:</strong> The user's IP address (not displayed in the image).</li>
-  <li><strong>Owner:</strong> The person or entity owning the user account.</li>
-</ul>
+              <ul className="list-disc list-inside text-lg lg:text-xl leading-relaxed space-y-4">
+                <li><strong>ID:</strong> Unique identifier for each user.</li>
+                <li><strong>Username:</strong> The username of the user.</li>
+                <li><strong>Password:</strong> The password associated with the account.</li>
+                <li><strong>Expire Date:</strong> The date when the user's access expires.</li>
+                <li><strong>Notes:</strong> Additional notes or information related to the user account.</li>
+                <li><strong>Speed:</strong> A field indicating the speed (left blank in this case).</li>
+                <li><strong>Con (Connections):</strong> Shows the number of active connections the user has.</li>
+                <li><strong>Watching:</strong> A field that may show the number of ongoing activities or sessions the user is involved in.</li>
+                <li><strong>IP:</strong> The user's IP address (not displayed in the image).</li>
+                <li><strong>Owner:</strong> The person or entity owning the user account.</li>
+              </ul>
 
 
 
               <p className="text-lg lg:text-xl leading-relaxed">
                 In the actions column, there are several options such as editing the user, exporting data, and more. You can manage the users by clicking the corresponding icons. You can also Add User, Add Trial User, or Remove Expired Lines using the available buttons. Additionally, there are filters and a search bar to help you sort and find specific users quickly.
               </p>
-<Image
+              <Image
                 src="/Country-list-ans-sleect-package.png"
                 width={1200}
                 height={800}
@@ -305,30 +305,30 @@ export function Resller() {
                 className="my-12 rounded-xl shadow-xl"
               />
 
- <h3 className="text-2xl lg:text-3xl font-semibold">
-       Account Creation Settings
+              <h3 className="text-2xl lg:text-3xl font-semibold">
+                Account Creation Settings
               </h3>
 
-              
 
-<ul className="list-disc list-inside text-lg lg:text-xl leading-relaxed space-y-4">
-  <li><strong>Create Line Type:</strong> Select the account type: Line (standard), Mag (MAG device), or Xtremetv (XtreamTV device).</li>
-  <li><strong>Country:</strong> Choose the countries you want to include or exclude from the selection.</li>
-  <li><strong>Package:</strong> Select from available durations: 1, 3, 6, or 12 months for the subscription.</li>
-  <li><strong>Max Allowed Connections:</strong> Specify the number of simultaneous connections allowed (e.g., 1).</li>
-  <li><strong>Expire Date:</strong> Set the account's expiration date and time.</li>
-  <li><strong>Price:</strong> Enter the price for the selected package.</li>
-  <li><strong>Credits Left:</strong> Shows the remaining credits available for the account.</li>
-</ul>
- <h3 className="text-2xl lg:text-3xl font-semibold">
-Manage Devices and Logs
+
+              <ul className="list-disc list-inside text-lg lg:text-xl leading-relaxed space-y-4">
+                <li><strong>Create Line Type:</strong> Select the account type: Line (standard), Mag (MAG device), or Xtremetv (XtreamTV device).</li>
+                <li><strong>Country:</strong> Choose the countries you want to include or exclude from the selection.</li>
+                <li><strong>Package:</strong> Select from available durations: 1, 3, 6, or 12 months for the subscription.</li>
+                <li><strong>Max Allowed Connections:</strong> Specify the number of simultaneous connections allowed (e.g., 1).</li>
+                <li><strong>Expire Date:</strong> Set the account's expiration date and time.</li>
+                <li><strong>Price:</strong> Enter the price for the selected package.</li>
+                <li><strong>Credits Left:</strong> Shows the remaining credits available for the account.</li>
+              </ul>
+              <h3 className="text-2xl lg:text-3xl font-semibold">
+                Manage Devices and Logs
               </h3>
               <ul className="list-disc list-inside text-lg lg:text-xl leading-relaxed space-y-4">
-  <li><strong>Manage MAG Devices: </strong> Oversee and configure MAG devices. Ensure smooth operation and device management.</li>
-</ul>
+                <li><strong>Manage MAG Devices: </strong> Oversee and configure MAG devices. Ensure smooth operation and device management.</li>
+              </ul>
 
 
-<Image
+              <Image
                 src="/mag.png"
                 width={1200}
                 height={800}
@@ -337,23 +337,23 @@ Manage Devices and Logs
               />
 
               <ul className="list-disc list-inside text-lg lg:text-xl leading-relaxed space-y-4">
-  <li
-  ><strong>Manage Enigma Devices:</strong> Administer Enigma devices. Monitor their health and update configurations.</li>
-</ul>
+                <li
+                ><strong>Manage Enigma Devices:</strong> Administer Enigma devices. Monitor their health and update configurations.</li>
+              </ul>
 
 
-<Image
+              <Image
                 src="/Enigma.png"
                 width={1200}
                 height={800}
                 alt="Profile"
                 className="my-12 rounded-xl shadow-xl"
               />
-<ul className="list-disc list-inside text-lg lg:text-xl leading-relaxed space-y-4">
-  <li><strong>Logs:</strong> Access detailed records of system activities. Track every action taken within the platform.</li>
-</ul>
+              <ul className="list-disc list-inside text-lg lg:text-xl leading-relaxed space-y-4">
+                <li><strong>Logs:</strong> Access detailed records of system activities. Track every action taken within the platform.</li>
+              </ul>
 
-<Image
+              <Image
                 src="/activity-logs.png"
                 width={1200}
                 height={800}
@@ -361,12 +361,12 @@ Manage Devices and Logs
                 className="my-12 rounded-xl shadow-xl"
               />
               <ul className="list-disc list-inside text-lg lg:text-xl leading-relaxed space-y-4">
-  <li><strong>Activity Log:</strong> Review all user and system activities. Identify any irregular actions or issues.</li>
-  <li><strong>Credits Log:</strong> View all credit-related activities. Monitor deposits, usage, and adjustments.</li>
-  <li><strong>Deposit:</strong> Manage and track deposit transactions. Ensure accurate fund tracking and processing.</li>
-</ul>
+                <li><strong>Activity Log:</strong> Review all user and system activities. Identify any irregular actions or issues.</li>
+                <li><strong>Credits Log:</strong> View all credit-related activities. Monitor deposits, usage, and adjustments.</li>
+                <li><strong>Deposit:</strong> Manage and track deposit transactions. Ensure accurate fund tracking and processing.</li>
+              </ul>
 
-<Image
+              <Image
                 src="/payments.png"
                 width={1200}
                 height={800}
