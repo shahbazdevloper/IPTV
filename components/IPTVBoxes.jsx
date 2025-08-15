@@ -113,79 +113,96 @@ export function IPTVBoxes() {
             <span className="text-[#30A179]">Why Choose Express IPTV</span>
           </h2>
           <p className="text-gray-300 leading-relaxed text-lg max-w-3xl">
-            In a world where digital entertainment rules, finding a reliable,
-            high-quality IPTV subscription can make all the difference. Express
-            IPTV is redefining the way Americans stream TV—offering unlimited
-            entertainment, ultra-fast servers, and unbeatable value.
+            In a world where digital entertainment rules, finding a reliable, high-quality IPTV subscription can make all the difference. Express IPTV is redefining the way Americans stream TV—offering unlimited entertainment, ultra-fast servers, and unbeatable value. If you're looking for the best IPTV service in the USA, look no further than Express IPTV.
           </p>
         </div>
 
         <div className="space-y-8">
-          <SectionBlock
-            title="Why Express IPTV Is the Top IPTV Subscription Provider in the U.S."
-            items={[
-              "45,000+ Live Channels – From local U.S. news and sports to global networks.",
-              "60,000+ Movies & Shows On-Demand – Blockbusters, trending series, and classics.",
-              "4K, Full HD & HD Streaming – Zero buffering, smooth playback.",
-              "Fast Activation & Easy Setup – Plug, play, and stream in minutes.",
-              "Works on All Devices – Firestick, Android TV, iOS/Windows, MAG, and more.",
-              "Affordable Plans – Starting at just $14.99/month.",
-              "24/7 U.S.-Based Support – Always here to help.",
-            ]}
-          />
-
-          <SectionBlock
-            title="Compatible with All Major IPTV Apps"
-            items={[
-              "TiviMate",
-              "IPTV Smarters Pro",
-              "XCIPTV Player",
-              "GSE Smart IPTV",
-              "Perfect Player IPTV",
-              "Kodi",
-            ]}
-          />
-
-          <SectionBlock
-            title="Stream on the Best Devices"
-            items={[
-              "Amazon Firestick / Fire TV",
-              "Android TV Boxes",
-              "Apple TV & iOS",
-              "MAG & Formuler Z Boxes",
-              "Smart TVs (Samsung, LG, Sony, etc.)",
-              "Windows & Mac PCs",
-              "Chromecast with Google TV",
-              "Roku (compatible apps)",
-            ]}
-          />
-        </div>
-
-        <div>
           <h3 className="text-2xl font-semibold text-[#30A179] mb-4">
-            Start Streaming with Express IPTV Today
-          </h3>
-          <p className="text-gray-300 leading-relaxed text-lg">
-            No contracts. No hidden fees. Just high-performance IPTV streaming
-            built for U.S. viewers. Ready to make the switch? Get started today
-            and unlock endless entertainment.
-          </p>
+      Why Express IPTV Is the Top IPTV Subscription Provider in the U.S.
+    </h3>
+    <p className="text-gray-300 leading-relaxed text-lg mb-3">
+      When comparing IPTV providers, it’s essential to look at content quality, reliability, streaming performance, and affordability. Express IPTV leads with excellence in every category:
+
+    </p>
+
+    <ul className="list-disc list-inside text-gray-300 text-lg space-y-3 max-w-3xl">
+  <li><strong>45,000+ Live Channels</strong> – Stream everything from local U.S. news and sports to international programming in multiple languages. Whether you're into NFL, NBA, MLB, or niche global networks—we’ve got it all.</li>
+  <li><strong>Over 60,000 Movies & TV Shows On-Demand</strong> – Get instant access to the newest blockbusters, trending series, classics, and documentaries. No need to pay extra for Netflix or Hulu.</li>
+  <li><strong>4K, Full HD & HD Streaming</strong> – Watch your favorite content in the best possible quality. With our ultra-stable servers, you’ll enjoy zero buffering and smooth playback every time.</li>
+  <li><strong>Fast Activation & Easy Setup</strong> – Get started in minutes. No long waits or complicated installations. Just plug, play, and stream.</li>
+  <li><strong>Works on All Devices</strong> – Use Express IPTV on Amazon Firestick, Android TV, Smart TVs, iOS, Windows, MAG Boxes, and more. Total flexibility, anytime and anywhere.</li>
+  <li><strong>Affordable Monthly Plans</strong> – Starting from just $14.99/month, you get premium streaming without the high cable bill.</li>
+  <li><strong>Dedicated U.S.-Based Support</strong> – Our expert support team is available 24/7 to assist you with setup, troubleshooting, and guidance.</li>
+</ul>
+
+  </div>
+
+  {/* Compatibility Section */}
+  <div>
+    <h3 className="text-2xl font-semibold text-[#30A179] mb-4">
+      Compatible with All Major IPTV Apps
+    </h3>
+    <p className="text-gray-300 leading-relaxed text-lg mb-3">
+Express IPTV works seamlessly with the most popular and reliable IPTV apps available today:
+
+    </p>
+<ul className="list-disc list-inside text-gray-300 text-lg space-y-3 max-w-3xl">
+  <li><strong>TiviMate:</strong> Perfect EPG interface and sleek layout for an enhanced viewing experience.</li>
+  <li><strong>IPTV Smarters Pro:</strong> Multi-screen support lets you watch up to 4 channels simultaneously with split-screen views, plus user-friendly features like advanced EPG, catch-up TV, and parental controls for a versatile streaming experience.</li>
+  <li><strong>XCIPTV Player:</strong> Advanced settings and dynamic playback options for customized viewing.</li>
+  <li><strong>GSE Smart IPTV:</strong> Supports multiple formats and custom playlists for flexible media management.</li>
+  <li><strong>Perfect Player IPTV:</strong> Excellent for managing Electronic Program Guides (EPGs) and M3U playlists efficiently.</li>
+  <li><strong>Kodi:</strong> Integrates easily with Express IPTV to create a complete media center setup combining IPTV and other media sources.</li>
+</ul>
+
+  </div>
+
+  {/* Device Support Section */}
+  <div>
+    <h3 className="text-2xl font-semibold text-[#30A179] mb-4">
+Stream on the Best Devices – 100% Compatible with Express IPTV
+    </h3>
+    <p className="text-gray-300 leading-relaxed text-lg mb-3">
+   Whether you're a casual viewer or a power streamer, Express IPTV is optimized for every popular device:
+
+    </p>
+    <ul className="list-disc list-inside text-gray-300 text-lg space-y-3 max-w-3xl">
+      <li>Amazon Firestick / Fire TV</li>
+      <li>Android TV Boxes (Nvidia Shield, X96 Max, etc.)</li>
+      <li>Apple TV & iOS Devices</li>
+      <li>MAG Devices & Formuler Z Boxes</li>
+      <li>Smart TVs (Samsung, LG, Sony, Vizio)</li>
+      <li>Windows & Mac PCs</li>
+      <li>Chromecast with Google TV</li>
+      <li>Roku (compatible apps)</li>
+    </ul>
+  </div>
+
+  <div>
+    <h3 className="text-2xl font-semibold text-[#30A179] mb-4">
+      Why Express IPTV Is the Best IPTV Service in the U.S.
+    </h3>
+    <p className="text-gray-300 leading-relaxed text-lg">
+     With Express IPTV, you’re not just buying a subscription—you’re upgrading your entire entertainment experience. Our premium channel lineup, on-demand library, crystal-clear streaming quality, and rock-solid server uptime put us miles ahead of typical IPTV providers.
+    </p>
+    <p className="text-gray-300 leading-relaxed text-lg">
+    Whether you're a sports fanatic, a movie buff, or just looking to cut the cord and save money, Express IPTV delivers the ultimate solution.
+    </p>
         </div>
+  {/* Call-to-Action Section */}
+  <div>
+    <h3 className="text-2xl font-semibold text-[#30A179] mb-4">
+      Start Streaming with Express IPTV Today
+    </h3>
+    <p className="text-gray-300 leading-relaxed text-lg">
+      No contracts. No hidden fees. Just high-performance IPTV streaming built for U.S. viewers. Ready to make the switch? Get started today and unlock endless entertainment.
+    </p>
+        </div>
+
+
       </motion.div>
     </div>
   );
 }
 
-/* Reusable SectionBlock component */
-function SectionBlock({ title, items }) {
-  return (
-    <div>
-      <h3 className="text-2xl font-semibold text-[#30A179] mb-4">{title}</h3>
-      <ul className="list-disc list-inside text-gray-300 text-lg space-y-3 max-w-3xl">
-        {items.map((item, i) => (
-          <li key={i}>{item}</li>
-        ))}
-      </ul>
-    </div>
-  );
-}
