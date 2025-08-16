@@ -7,14 +7,14 @@ import { motion } from 'framer-motion';
 export function IptvInstallationGuide() {
   const router = useRouter();
   const platforms = [
-    { image: "image(8).png", name: "Apple TV", description: "How to Install IPTV on your Apple TV" },
-    { image: "image(2).png", name: "iOS Mobile", description: "How to Install IPTV on your iOS Mobile" },
-    { image: "image(4).png", name: "Amazon Fire TV", description: "How to Install IPTV on your Amazon Fire TV Stick" },
-    { image: "image(5).png", name: "LG TV", description: "How to Install IPTV on your LG TV" },
-    { image: "image(1).png", name: "Android TV", description: "How to Install IPTV on your Android TV" },
-    { image: "image(3).png", name: "Android Mobile", description: "How to Install IPTV on your Android Mobile" },
-    { image: "image(7).png", name: "Windows", description: "How to Install IPTV on your Windows desktop" },
-    { image: "image(6).png", name: "Samsung TV", description: "How to Install IPTV on your Samsung TV" },
+    { image: "image(8).png", name: "Apple TV", description: "How to Install IPTV on Apple TV" },
+    { image: "image(2).png", name: "iOS Mobile", description: "How to Install IPTV on Smart TV" },
+    { image: "image(4).png", name: "Amazon Fire TV", description: "How to Install IPTV on Mobile/Tablet" },
+    { image: "image(5).png", name: "LG TV", description: "How to Install IPTV on  Computer (Windows/Mac)" },
+    { image: "image(1).png", name: "Android TV", description: "How to Install IPTV on Android Box" },
+    { image: "image(3).png", name: "Android Mobile", description: "How to Install IPTV on Formuler Box" },
+    { image: "image(7).png", name: "Windows", description: "How to Install IPTV on TVIP Box" },
+    { image: "image(6).png", name: "Samsung TV", description: "How to Install IPTV on Onyx Box" },
   ];
 
 
@@ -56,7 +56,7 @@ export function IptvInstallationGuide() {
         >
           <div
             key={index}
-            className="flex lg:flex-row w-96 lg:w-[700px] flex-col bg-[#1b1b1b] rounded-lg p-5 items-center gap-5 shadow-lg transition-all duration-300 cursor-pointer hover:scale-105"
+            className="flex lg:flex-row w-96 lg:w-[650px] flex-col bg-[#1b1b1b] rounded-lg p-5 items-center gap-5 shadow-lg transition-all duration-300 cursor-pointer hover:scale-105"
           >
             <img
               className="w-full max-w-[250px] h-[200px] rounded-lg object-cover"

@@ -10,7 +10,7 @@ export default function page() {
         <main>
             <Header />
             <GuideBanner />
-            <IptvInstallationGuide />
+            <IptvInstallationGuide    />
             <FeedbackForm />
             <Footer />
         </main>
