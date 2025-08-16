@@ -38,14 +38,14 @@ export function Header() {
 
   return (
     <header className="fixed xl:top-5 w-full flex justify-center z-50">
-      <div className="w-full xl:w-[1400px] 2xl:w-[1800px] py-2 bg-[#131313] xl:bg-white/10 backdrop-blur-sm shadow-md xl:rounded-full px-6">
+      <div className="w-full xl:w-[1400px] 2xl:w-[1800px] py-2 bg-[#131313] xl:bg-white/10 backdrop-blur-sm shadow-md xl:rounded-full px-2">
         <div className="mx-auto px-4 h-14 flex items-center justify-between">
           {/* Logo */}
           <Link href="/" aria-label="Home">
             <Image
               src="/logo.png"
               alt="Streaming device showing sports Logo"
-              width={160}
+              width={180}
               height={60}
               priority
             />
@@ -72,7 +72,7 @@ export function Header() {
                     pathname === item.href
                       ? "text-[#2EAE8C] hover:text-white"
                       : "text-white"
-                  } mr-4 transition cursor-pointer text-[16px] font-medium text-center hover:bg-[#239579] rounded-full px-6 py-2`}
+                  } mr-4 transition cursor-pointer text-[15px] font-medium text-center hover:bg-[#239579] rounded-full px-6 py-2`}
                 >
                   {item.name}
                 </Link>
