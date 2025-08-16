@@ -33,7 +33,7 @@ export function BlogBanner() {
 
             {/* Text Content with Animation */}
             <motion.div 
-                className="absolute inset-0 flex flex-col justify-center items-center gap-4 px-4"
+                className="absolute inset-0 flex max-sm:flex-col justify-center items-center gap-4 px-4"
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1, delay: 0.5, ease: "easeOut" }}
