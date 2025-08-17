@@ -24,7 +24,7 @@ export const Supports = ({ Support, openSupport, openLanguage }) => {
     const currentLanguage = languages.find((lang) => lang.code === language) || languages[0];
 
     return (
-        <div className="relative inline-block text-left px-0 z-50 mx-5 ">
+        <div className="relative inline-block text-left px-0 z-50 lg:px-4 ">
             <div>
                 <button
                     type="button"

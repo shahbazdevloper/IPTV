@@ -1,7 +1,8 @@
-"use client";
+"use client"
 
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from 'react';
 import Link from "next/link";
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Supports } from "@/components/Supports";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
@@ -10,174 +11,120 @@ import { usePathname } from "next/navigation";
 import { useLanguage } from "@/components/contexts/LanguageContext";
 import { translations } from "@/components/translations";
 
+
 export function Header() {
-  const [openSupport, setOpenSupport] = useState(false);
-  const [openLanguage, setOpenLanguage] = useState(false);
-  const [isOpen, setIsOpen] = useState(false);
+  const [openSupport, setopenSupport] = useState(false);
+  const [openLanguage, setopenLanguage] = useState(false);
   const { language } = useLanguage();
   const t = translations[language].header;
-  const pathname = usePathname();
-
   const navigation = [
     { name: t.Home, href: "/" },
     { name: t.Free_Trial, href: "/free-trial" },
     { name: t.Pricing, href: "/pricing" },
     { name: t.Channels, href: "/Channels" },
     { name: t.Guides, href: "/guides" },
-    { name: t.Reseller, href: "/reseller" },
+    { name: t.Reseller, href: "reseller" },
     { name: t.Blog, href: "https://blog.expressiptv.com/" },
     { name: "language", href: "" },
   ];
-
+  const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
   useEffect(() => {
     if (!isOpen) {
-      setOpenSupport(false);
-      setOpenLanguage(false);
+      setopenSupport(false)
+      setopenLanguage(false)
     }
-  }, [isOpen]);
-
+  }, [isOpen])
   return (
     <header className="fixed xl:top-5 w-full flex justify-center z-50">
-      <div className="w-full xl:w-[1400px] 2xl:w-[1800px] py-2 bg-white/10 backdrop-blur-sm shadow-md xl:rounded-full px-2">
+      <div className="w-full xl:w-[1300px] 2xl:w-[1800px] py-2  bg-[#131313] xl:bg-white/10 backdrop-blur-sm xl:rounded-full px-4">
         <div className="mx-auto px-4 h-14 flex items-center justify-between">
-          {/* Logo */}
-          <Link href="/" aria-label="Home">
+          <Link href="/">
             <Image
-              src="/logo.png"
+              src="./logo.png"
               alt="Streaming device showing sports Logo"
-              width={180}
-              height={60}
-              priority
+              width={200}
+              height={200}
+              className=""
             />
           </Link>
 
           {/* Desktop Navigation */}
-          <nav
-            className="hidden xl:flex items-center 2xl:gap-8"
-            aria-label="Main navigation"
-          >
-            {navigation.map((item, index) =>
-              item.name === "language" ? (
-                <LanguageSwitcher
-                  key={index}
-                  Language={openLanguage}
-                  openLanguage={setOpenLanguage}
-                  openSupport={setOpenSupport}
-                />
-              ) : (
-                <Link
-                  key={index}
-                  href={item.href}
-                  className={`${
-                    pathname === item.href
-                      ? "text-[#2EAE8C] hover:text-white"
-                      : "text-white"
-                  } mr-4 transition cursor-pointer text-[15px] font-medium text-center hover:bg-[#239579] rounded-full px-4 py-2`}
-                >
-                  {item.name}
-                </Link>
-              )
-            )}
-            <Supports
-              Support={openSupport}
-              openSupport={setOpenSupport}
-              openLanguage={setOpenLanguage}
-            />
+          <nav className="hidden xl:flex items-center  2xl:gap-6 ">
+            {navigation.map((item, index) => (
+              item.name == "language" ? <LanguageSwitcher Language={openLanguage} openLanguage={setopenLanguage} openSupport={setopenSupport} /> :
+              <Link
+                key={index}
+                href={item.href}
+                className={`${pathname == item.href ? "text-[#2EAE8C] hover:text-white" : "text-white "} transition cursor-pointer text-[15px]  font-medium  text-center hover:bg-[#239579]  rounded-full px-4 2xl:px-6 py-2`}
+              >
+                {item.name}
+              </Link>
+            ))}
+            <Supports Support={openSupport} openSupport={setopenSupport} openLanguage={setopenLanguage}/>
+            
           </nav>
 
-          {/* Mobile Menu Button */}
+          {/* Mobile Navigation */}
           <div className="xl:hidden">
-            <Button
-              variant="ghost"
-              size="icon"
-              aria-label="Toggle menu"
-              className="text-white w-12"
-              onClick={() => setIsOpen(true)}
-            >
+            <Button variant="ghost" size="icon" className="text-white w-12" onClick={() => setIsOpen(true)}>
               <div className="w-12 h-11 bg-[#1a1a1a4b] border-[#26262649] border-4 rounded-md flex justify-center items-center">
-                <Image src="/Icon.png" alt="Menu" width={28} height={28} />
+                <Image
+                  src="./Icon.png"
+                  alt="Toggle menu"
+                  width={30}
+                  height={30}
+                />
               </div>
+              <span className="sr-only">Toggle menu</span>
             </Button>
           </div>
-
-          {/* Desktop CTA */}
-          <Link href="https://jivo.chat/p36Je0zF3T" target="_blank">
-            <Button className="hidden w-auto px-5 xl:inline-flex button text-white rounded-full text-md font-medium">
-              {t.button_text}
-            </Button>
-          </Link>
+          {/* Desktop Get Started Button */}
+        <Link href="https://jivo.chat/p36Je0zF3T" target='_blank'>
+  <Button className="hidden w-auto px-5 xl:inline-flex button text-white rounded-full text-md font-medium">
+    {t.button_text}
+  </Button>
+</Link>
+          {/* <Custombutton /> */}
         </div>
       </div>
-
-      {/* Mobile Navigation */}
       <div className="xl:hidden">
-        <div
-          className={`absolute w-full h-screen top-0 left-0 text-white transition-all duration-300 ${
-            isOpen ? "translate-x-0" : "-translate-x-full"
-          }`}
-        >
-          {/* Background Overlay */}
-          <div className="bg-black/40 w-full h-full backdrop-blur-sm absolute top-0 left-0" />
-
-          {/* Sidebar Menu */}
-          <div className="relative bg-[#0E0E0E] w-4/5 h-full p-6 flex flex-col gap-6">
-            {/* Close Button */}
-            <button
-              aria-label="Close menu"
-              className="self-end text-white text-2xl"
-              onClick={() => setIsOpen(false)}
-            >
-              ✕
-            </button>
-
-            {/* Logo */}
-            <Link href="/" onClick={() => setIsOpen(false)}>
-              <Image
-                src="/logo.png"
-                alt="Streaming device showing sports Logo"
-                width={180}
-                height={60}
-              />
-            </Link>
-
-            {/* Links */}
-            {navigation.map((item, index) =>
-              item.name === "language" ? (
-                <LanguageSwitcher
-                  key={index}
-                  Language={openLanguage}
-                  openLanguage={setOpenLanguage}
-                  openSupport={setOpenSupport}
+        <div className={`absolute w-full h-screen top-0 left-0 text-white  ${isOpen ? "block" : "hidden"}`}>
+          <div className={`bg-[#0E0E0E]/10 w-full h-[1000vh] backdrop-blur-[6px] absolute top-0 left-0`} />
+          <div className={`absolute left-3 z-100 pl-5 `}>
+            <div className={`flex flex-col gap-4 mt-8`}>
+              <Link href="/">
+                <Image
+                  src="./logo.png"
+                  alt="Streaming device showing sports Logo"
+                  width={180}
+                  height={180}
                 />
-              ) : (
+              </Link>
+              {navigation.map((item, index) => (
+                item.name == "language" ? <LanguageSwitcher Language={openLanguage} openLanguage={setopenLanguage} openSupport={setopenSupport} /> :
                 <Link
                   key={index}
                   href={item.href}
                   onClick={() => setIsOpen(false)}
-                  className={`text-lg font-medium ${
-                    pathname === item.href ? "text-[#2EAE8C]" : "text-white"
-                  } transition py-2`}
+                  className={`text-lg font-medium ${pathname == item.href ? "text-[#2EAE8C]" : "text-white"} transition py-2`}
                 >
                   {item.name}
                 </Link>
-              )
-            )}
-
-            {/* Support */}
-            <Supports
-              Support={openSupport}
-              openSupport={setOpenSupport}
-              openLanguage={setOpenLanguage}
-            />
-
-            {/* CTA */}
-            <div className="mt-6">
-              <Button
-                className="w-36 rounded-full button text-white"
-                onClick={() => setIsOpen(false)}
-              >
-                {t.button_text}
-              </Button>
+              ))}
+              <Supports Support={openSupport} openSupport={setopenSupport} openLanguage={setopenLanguage} />
+              <div className="mt-4">
+                <Button
+                  className="w-36 rounded-full button text-white"
+                  onClick={() => setIsOpen(false)}
+                >
+                  {t.button_text}
+                </Button>
+              </div>
+              <div className="flex justify-end w-screen" onClick={() => setIsOpen(false)}>
+                <div className="close">
+                </div>
+              </div>
             </div>
           </div>
         </div>

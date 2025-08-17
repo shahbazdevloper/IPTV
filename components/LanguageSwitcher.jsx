@@ -25,7 +25,7 @@ export const LanguageSwitcher = ({ Language, openLanguage, openSupport }) => {
       <div>
         <button
           type="button"
-          className="inline-flex justify-center gap-x-1.5 rounded-md bg-transparent 2xl:px-3 py-2 text-md 2xl:text-xl font-medium text-white"
+          className="inline-flex justify-center gap-x-1.5 rounded-md bg-transparent  lg:px-3 py-2 text-[15px] font-medium text-white"
           id="menu-button"
           aria-expanded="true"
           aria-haspopup="true"
