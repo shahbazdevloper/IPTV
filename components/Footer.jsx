@@ -173,7 +173,7 @@ export function Footer() {
                 <Link
                   key={index}
                   href={item.href}
-                  className="hover:text-white cursor-pointer px-2"
+                  className="hover:text-[#2EAE8C] cursor-pointer px-2"
                 >
                   {item.name}
                 </Link>
