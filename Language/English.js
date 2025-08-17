@@ -1,3 +1,5 @@
+
+
 const English = {
   header: {
     Home: "Home",
@@ -21,6 +23,9 @@ const English = {
   footer: {
     Home: "Home",
     About_us: "About us",
+    DMCA: "DMCA",
+    PrivacyPolicy: "Privacy Policy",
+    TermsAndCondition: "Terms And Conditions",
     Pricing:"Pricing",
     Troubleshoot:"Troubleshoot",
     FAQs: "FAQs",
