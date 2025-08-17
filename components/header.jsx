@@ -38,7 +38,7 @@ export function Header() {
 
   return (
     <header className="fixed xl:top-5 w-full flex justify-center z-50">
-      <div className="w-full xl:w-[1400px] 2xl:w-[1800px] py-2 bg-[#e7cfcf] xl:bg-white/10 backdrop-blur-sm shadow-md xl:rounded-full px-2">
+      <div className="w-full xl:w-[1400px] 2xl:w-[1800px] py-2 bg-white/10 backdrop-blur-sm shadow-md xl:rounded-full px-2">
         <div className="mx-auto px-4 h-14 flex items-center justify-between">
           {/* Logo */}
           <Link href="/" aria-label="Home">
