@@ -30,7 +30,7 @@ const English = {
     Apple_TV: "Apple TV",
     Smart_Tv: "Smart TV",
     Mobil_Surfplatta:"Mobil/Surfplatta",
-    Datorn:"Datorn",
+    Datorn:"Computer (Windows/Macbook)",
     Android_Box: "Android Box",
     Formuler_Box: "Formuler Box",
     TVIP_Box: "TVIP Box",

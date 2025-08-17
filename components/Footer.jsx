@@ -117,7 +117,7 @@ export function Footer() {
             animate={{ scale: 1.0, opacity: 1 }}
             transition={{ duration: 1, delay: 0.5, ease: "easeOut" }}
           >
-            <h3 className="text-xl font-bold">Instruktioner</h3>
+            <h3 className="text-xl font-bold">Instructions</h3>
             <nav className="grid items-center gap-3">
               {navigation2.map((item, index) => (
                 <Link
@@ -158,7 +158,7 @@ export function Footer() {
         </motion.div>
       )}
 
-      <hr className="border-white border w-full my-6" />
+ <hr className="border-s border-white/50 w-full my-6" />
 
       <div className="w-full xl:max-w-[1400px] flex flex-col lg:flex-row justify-between items-center gap-4 text-gray-400 px-6 md:px-8 lg:px-10 pb-6">
         <p>Copyright 2025 | All rights reserved</p>
