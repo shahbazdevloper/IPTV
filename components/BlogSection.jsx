@@ -6,7 +6,7 @@ export function BlogSectin() {
 
 
   return (
-    <div className="flex flex-wrap p-4 justify-center w-full py-8 lg:py-16 ">
+    <div className="flex flex-wrap p-4 justify-center w-full py-8 ">
         {/* Heading Section */}
             <div className="relative flex flex-col items-center text-center w-full px-4 mb-20">
                 <h1 className="Features_label border-emerald-600/50 font-bold uppercase text-emerald-600/10 text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-[120px]">
