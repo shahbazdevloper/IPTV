@@ -62,7 +62,7 @@ export const LanguageSwitcher = ({ Language, openLanguage, openSupport }) => {
                 setLanguage(lang.code)
                 openLanguage(false)
               }}
-              className="cursor-pointer text-white py-2 text-lg font-normal pl-5 border-b-2 px-14 h-14 flex items-center"
+              className="cursor-pointer text-white py-2 text-[15px] font-normal pl-5 border-b-2 px-14 h-14 flex items-center"
               role="menuitem"
               tabIndex={0}
               onKeyDown={(e) => {

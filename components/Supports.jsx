@@ -28,7 +28,7 @@ export const Supports = ({ Support, openSupport, openLanguage }) => {
             <div>
                 <button
                     type="button"
-                    className="inline-flex justify-center gap-x-1.5 rounded-md bg-transparent 2xl:px-3 py-2 text-[16px]  font-medium text-white"
+                    className="inline-flex justify-center gap-x-1.5 rounded-md bg-transparent 2xl:px-3 py-2 text-[15px]  font-medium text-white"
                     id="menu-button"
                     aria-expanded="true"
                     aria-haspopup="true"
@@ -59,7 +59,7 @@ export const Supports = ({ Support, openSupport, openLanguage }) => {
                         <Link
                             href={lang.href}
                             key={index}
-                            className="cursor-pointer text-white py-2 text-lg font-normal pl-5 border-b-2 h-14 flex items-center"
+                            className="cursor-pointer text-white py-2 text-[15px] font-normal pl-5 border-b-2 h-14 flex items-center"
                             role="menuitem"
                             onClick={() => openSupport(false)}>
                             {lang.name}

@@ -107,7 +107,7 @@ export function Header() {
                   key={index}
                   href={item.href}
                   onClick={() => setIsOpen(false)}
-                  className={`text-lg font-medium ${pathname == item.href ? "text-[#2EAE8C]" : "text-white"} transition py-2`}
+                  className={`text-[15px] font-medium ${pathname == item.href ? "text-[#2EAE8C]" : "text-white"} transition py-2`}
                 >
                   {item.name}
                 </Link>
