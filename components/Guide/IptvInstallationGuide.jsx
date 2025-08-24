@@ -1,22 +1,19 @@
 "use client";
 
 import React, { useEffect, useRef, useState } from 'react';
-import { useRouter } from "next/navigation";
 import { motion } from 'framer-motion';
 
 export function IptvInstallationGuide() {
-  const router = useRouter();
   const platforms = [
-    { image: "image(8).png", name: "Apple TV", description: "How to Install IPTV on Apple TV" },
-    { image: "image(2).png", name: "iOS Mobile", description: "How to Install IPTV on Smart TV" },
-    { image: "image(4).png", name: "Amazon Fire TV", description: "How to Install IPTV on Mobile/Tablet" },
-    { image: "image(5).png", name: "LG TV", description: "How to Install IPTV on  Computer (Windows/Mac)" },
-    { image: "image(1).png", name: "Android TV", description: "How to Install IPTV on Android Box" },
-    { image: "image(3).png", name: "Android Mobile", description: "How to Install IPTV on Formuler Box" },
-    { image: "image(7).png", name: "Windows", description: "How to Install IPTV on TVIP Box" },
-    { image: "image(6).png", name: "Samsung TV", description: "How to Install IPTV on Onyx Box" },
+    { image: "image(8).png", name: "Apple TV", description: "How to Install IPTV on Apple TV", link: "https://blog.expressiptv.com/how-to-install-iptv-on-apple-tv/" },
+    { image: "IPTV-on-smart-TV.png", name: "Smart TV", description: "How to Install IPTV on Smart TV", link: "https://blog.expressiptv.com/how-to-install-iptv-on-smart-tv/" },
+    { image: "IPTV-on-mobile-or-Tablet.png", name: "Mobile/Tablet", description: "How to Install IPTV on Mobile/Tablet", link: "https://blog.expressiptv.com/how-to-install-iptv-on-mobile-tablet/" },
+    { image: "IPTV-on-laptop-or-computer.png", name: "Computer (Windows/Mac)", description: "How to Install IPTV on Computer (Windows/Mac)", link: "https://blog.expressiptv.com/how-to-install-iptv-on-computer-windows-mac/" },
+    { image: "image(1).png", name: "Android Box", description: "How to Install IPTV on Android Box", link: "https://blog.expressiptv.com/how-to-install-iptv-on-android-box/" },
+    { image: "Formuler-Box.png", name: "Formuler Box", description: "How to Install IPTV on Formuler Box", link: "https://blog.expressiptv.com/how-to-install-iptv-on-formuler-box/" },
+    { image: "TVIP-box.png", name: "TVIP Box", description: "How to Install IPTV on TVIP Box", link: "https://blog.expressiptv.com/how-to-install-iptv-on-tvip-box/" },
+    { image: "Onyx-Box.png", name: "Onyx Box", description: "How to Install IPTV on Onyx Box", link: "https://blog.expressiptv.com/how-to-install-iptv-on-onyx-box/" },
   ];
-
 
   const [isVisible, setIsVisible] = useState(false);
   const divRef = useRef(null);
@@ -24,38 +21,28 @@ export function IptvInstallationGuide() {
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-        }
+        if (entry.isIntersecting) setIsVisible(true);
       },
-      { threshold: 0.5 } // Trigger when 30% of the component is visible
+      { threshold: 0.5 }
     );
 
-    if (divRef.current) {
-      observer.observe(divRef.current);
-    }
+    if (divRef.current) observer.observe(divRef.current);
 
     return () => {
-      if (divRef.current) {
-        observer.unobserve(divRef.current);
-      }
+      if (divRef.current) observer.unobserve(divRef.current);
     };
   }, []);
 
-  const handleImageClick = (platform, id) => {
-    localStorage.setItem("platform", JSON.stringify(platform))
-    router.push(`/guideDetails?id=${id}`);
-  };
   return (
-    <div className="w-full p-5 gap-10 flex flex-wrap my-20 px-10 justify-center">
+    <div className="w-full p-5 gap-10 flex flex-wrap my-20 px-10 justify-center" ref={divRef}>
       {platforms.map((platform, index) => (
         <motion.div
-          initial={{ opacity: 0, x : index % 2 == 0 ? -200 : 200 }}
-          animate={{ opacity: 1, x : 0 }}
+          key={index}
+          initial={{ opacity: 0, x: index % 2 === 0 ? -200 : 200 }}
+          animate={isVisible ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 1 }}
         >
           <div
-            key={index}
             className="flex lg:flex-row w-96 lg:w-[650px] flex-col bg-[#1b1b1b] rounded-lg p-5 items-center gap-5 shadow-lg transition-all duration-300 cursor-pointer hover:scale-105"
           >
             <img
@@ -70,10 +57,15 @@ export function IptvInstallationGuide() {
               <div className="text-white text-lg sm:text-xl font-medium text-center sm:text-left">
                 {platform.description}
               </div>
-              <div className="text-white text-base sm:text-lg font-medium underline hover:text-[#30a079] flex justify-center items-center gap-2 cursor-pointer" onClick={() => handleImageClick(platform, index)} >
+              <a
+                href={platform.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white text-base sm:text-lg font-medium underline hover:text-[#30a079] flex justify-center items-center gap-2"
+              >
                 Learn More
                 <img src="./rightlong.png" className="w-8 h-3 object-contain" />
-              </div>
+              </a>
             </div>
           </div>
         </motion.div>
