@@ -12,7 +12,7 @@ export default function Page() {
         <main>
             <Header />
             <ServiceBanner />
-            {/* <ChannelsSection /> */}
+            <ChannelsSection />
               <MoviesSection />
             <Count />
             <FeedbackForm />
