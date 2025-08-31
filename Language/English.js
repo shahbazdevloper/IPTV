@@ -227,6 +227,7 @@ const English = {
       heading: "6 Month Package",
       plan_type: "Standard Plan",
       plan_value: 49.99,
+      button_text: "BUY NOW",
       plan_features: {
         features_one: "+25000 Channels 4K, FHD et HD",
         features_two: "+140 000 VOD HD, FHD",
@@ -245,6 +246,7 @@ const English = {
       heading: "6 Month With VPN",
       plan_type: "Standard Plan",
       plan_value: 49.99,
+      button_text: "BUY NOW",
       plan_features: {
         features_one: "+25000 Channels 4K, FHD et HD",
         features_two: "+140 000 VOD HD, FHD",
